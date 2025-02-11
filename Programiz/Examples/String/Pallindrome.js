@@ -8,7 +8,7 @@ function checkPallindrome (string){
     let newString=''; // declared an empty string to store the string in reverse order 
      
     let length = string.length
-    for ( let val = 0 ; val <length ; val++){
+    for ( let val = length ; val >=0 ; val--){
         newString+=val
     }
 
@@ -18,6 +18,7 @@ function checkPallindrome (string){
 
 }
 
-const string = prompt('Enter the string to check wheater it is a pallindrome or not' )
+// take output from user
+const string = prompt('Enter the string to check wheater it is a pallindrome or not :' )
 
 console.log(checkPallindrome(string))

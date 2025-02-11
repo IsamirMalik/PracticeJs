@@ -19,6 +19,6 @@ function checkPallindrome (string){
 }
 
 // take output from user
-const string = prompt('Enter the string to check wheater it is a pallindrome or not :' )
+const string = prompt('Enter the string to check wheater it is a pallindrome or not :' );
 
-console.log(checkPallindrome(string))
+console.log(checkPallindrome(string));

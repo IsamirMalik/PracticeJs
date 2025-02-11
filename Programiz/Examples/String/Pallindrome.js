@@ -3,7 +3,11 @@
 
 // A string is a pallindrome if it is read the same forward or backward. ex. 'dad' , 'Racecar' , 'Madam' etc ..
 
+let input = prompt('Enter the string to check wheater it is a pallindrome or not :');
 
+ while(!input) { 
+    input = prompt('Enter the string to check wheater it is a pallindrome or not :')
+ }
 
 function checkPallindrome(string){
    
@@ -33,11 +37,6 @@ function checkPallindrome(string){
     
 }
 
-let input = prompt('Enter the string to check wheater it is a pallindrome or not :');
-
- while(!input){
-    input = prompt('Enter the string to check wheater it is a pallindrome or not :')
- }
 
 console.log(checkPallindrome(input));
 

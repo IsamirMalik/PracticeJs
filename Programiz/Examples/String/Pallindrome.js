@@ -3,16 +3,17 @@
 
 // A string is a pallindrome if it is read the same forward or backward. ex. 'dad' , 'Racecar' , 'Madam' etc ..
 
-function checkPallindrome (string){
+function checkPallindrome(string){
 
     let newString=''; // declared an empty string to store the string in reverse order 
      
-    let length = string.length
-    for ( let val = length ; val >=0 ; val--){
-        newString+=val
+  
+    for ( let i =string.length-1 ; i >=0 ; i--){
+        newString+=string[i]
     }
 
-    let output = (newString===string) ? `${string} is a Pallindrome` : `${string} is not a Pallindrome` ;
+
+    let output = (newString===string) ? `Given string "${string}" is a Pallindrome` : `Given string "${string}" is not a Pallindrome` ;
 
     return output ;
 

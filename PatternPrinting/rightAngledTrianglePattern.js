@@ -32,3 +32,32 @@ string becomes empty , and we can decide how many stars we want in the new line 
 }
 
 printStars(5);
+
+
+
+/* write code for printing stars in the form of inverted right angled triangle */
+
+//       PATTERN    
+/* 
+            * * * * *
+            * * * *
+            * * *
+            * *
+            * 
+*/
+
+function invertedTrianglePattern (n){
+
+    // outer loop for number of line or rows 
+
+    for ( let line = 1 ; line <=n ; line++){
+
+        str='' // empty string for deciding number of stars in a line 
+
+        for (  star=1 ; star <= n-line+1 ; star++ ) {
+            str+="* "
+        } console.log(str)
+    } 
+}
+
+invertedTrianglePattern(5)

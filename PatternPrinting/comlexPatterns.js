@@ -227,4 +227,61 @@ function invertedHollowPyramid ( num ) {
    } 
 }
 
-invertedHollowPyramid(5);
+// invertedHollowPyramid(5);
+
+
+/* print the pattern shown below 
+
+* * * *   * * * * 
+* * *       * * * 
+* *           * * 
+*               * 
+*               * 
+* *           * * 
+* * *       * * * 
+* * * *   * * * *
+
+*/
+
+
+
+function pattern ( num ){
+    
+    let n = num/2
+    for ( let row = 0 ; row<n ; row++){
+        
+        let str='';
+        
+        for ( let col = 0 ; col<n-row ; col++){
+            str+='* '
+        } 
+        for ( space = 0 ; space<2*row+1 ; space++){
+            str+="  "
+        }
+        
+        for( star=0; star<n-row ; star++){
+            str+="* "
+        }
+        console.log(str)
+    }
+
+
+    for (let row = 0 ; row < n ; row++){
+        
+        let str=''
+         for ( char = 0 ; char<row+1 ; char++){
+            str+="* "
+        } 
+        
+        for ( space = 0 ; space<(2*n)-(2*row)-1 ; space++){
+            str+="  "
+        }
+        
+        for ( star = 0 ; star < row+1 ; star++){
+            str+="* "
+        }
+        console.log(str)
+    }
+}
+
+pattern(8)

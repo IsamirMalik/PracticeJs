@@ -202,3 +202,29 @@ function hollowPyramid ( num ) {
 }
 
 hollowPyramid(5) ;
+
+
+// print inverted hollow pyramid 
+
+
+function invertedHollowPyramid ( num ) {
+    
+    for ( let row = 0 ; row < num ; row++ ){
+    let str = '';
+    
+     for ( let space = 0 ; space < row; space++){
+        str+=" "
+    }
+    
+    for ( let star = 0 ; star < num-row; star++){
+        if ( star == 0 || star == num-row-1){
+            str+='* '
+        } else {
+            str+="  "
+        }
+    }  console.log(str)
+   
+   } 
+}
+
+invertedHollowPyramid(5);

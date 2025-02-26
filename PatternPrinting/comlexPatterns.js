@@ -23,6 +23,89 @@ function halfPyramid (n) {
     } 
 }
 
+
+/* print the below pattern 
+
+1 
+2 * 2 
+3 * 3 * 3 
+4 * 4 * 4 * 4 
+
+*/
+
+function triangle ( num ) {
+    
+    for ( let row = 0 ; row < num ; row++){
+        
+           let str = '';
+        
+          // for ( let col = 0 ; col < 2*row+1 ; col++){
+        
+            // if(col%2==0){
+            //   str+= (row+1) + ' '  
+            // } else {
+            //     str+="* "
+            // }
+
+
+            for ( let col = 0 ; col < row+1 ; col++){
+
+                if(col==row){
+                    str+= row + 1 + ' '
+                } else {
+                    str+= row + 1 + ' ' + '* '
+                }
+            } console.log(str)
+    }
+}
+
+// triangle(4);
+
+
+/* print the pattern below 
+
+1 
+2 * 2 
+3 * 3 * 3 
+4 * 4 * 4 * 4 
+3 * 3 * 3 
+2 * 2 
+1 
+
+*/
+
+function triangle ( num ) {
+    
+    for ( let row = 0 ; row < num ; row++){
+        
+        let str = '';
+        
+        for ( let col = 0 ; col < row+1 ; col++){
+             if(col==row){
+                 str+= row + 1 + ' '
+             } else {
+                 str+= row + 1 + ' ' + '* '
+             }
+         
+        } console.log(str) ;
+     
+    }
+    
+    for ( let row = 1 ; row < num  ; row++){
+        let str='';
+        for ( let col = 0 ; col < num - row ; col++){
+            if ( col == num-row-1){
+                str+=num-row + ' '
+            } else {
+                str+= num-row +' '+'* '
+            }
+        } console.log(str)
+    }
+    
+}
+
+// triangle(4);
+
 // halfPyramid(5) ;
 
 
@@ -201,7 +284,7 @@ function hollowPyramid ( num ) {
    } 
 }
 
-hollowPyramid(5) ;
+// hollowPyramid(5) ;
 
 
 // print inverted hollow pyramid 
@@ -284,4 +367,4 @@ function pattern ( num ){
     }
 }
 
-pattern(8)
+// pattern(8);

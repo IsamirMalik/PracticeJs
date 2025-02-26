@@ -106,6 +106,39 @@ function triangle ( num ) {
 
 // triangle(4);
 
+
+/* print the pattern below
+
+* * * * * * 
+*       * 
+*     * 
+*   * 
+* * 
+*
+
+*/
+
+
+function hollowHalfInvertedPyramid ( num ) {
+    
+    
+    for ( let row = 0 ; row < num  ; row++){
+        let str='';
+        for ( let col = 0 ; col < num - row ; col++){
+            if ( row==0){
+                str+="* "
+            } else if( col == num-row-1 || col == 0){
+                str+= '* '
+            } else  {
+                str+="  "
+            }
+        } console.log(str)
+    }
+    
+}
+
+// hollowHalfInvertedPyramid(6);
+
 // halfPyramid(5) ;
 
 
@@ -368,3 +401,9 @@ function pattern ( num ){
 }
 
 // pattern(8);
+
+
+
+
+
+

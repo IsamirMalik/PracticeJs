@@ -287,6 +287,30 @@ function printDiamond ( num ) {
 
 // printDiamond(8);
 
+
+function printDiamond(num) {
+  if (num <= 0 || num % 2 !== 0) {
+    console.error("Input must be a positive even number.");
+    return;
+  }
+
+  const half = num / 2;
+
+  // Upper half of the diamond
+  for (let row = 0; row < half; row++) {
+    let str = " ".repeat(half - row - 1) + "* ".repeat(row + 1);
+    console.log(str);
+  }
+
+  // Lower half of the diamond
+  for (let row = 0; row < half; row++) {
+    let str = " ".repeat(row) + "* ".repeat(half - row);
+    console.log(str);
+  }
+}
+
+// printDiamond(8);
+
 /* Print Hollow pyramid
 
     * 

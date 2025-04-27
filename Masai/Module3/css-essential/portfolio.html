@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+         
+        }
+
+        header,footer{
+            background-color: rgba(245, 112, 71, 0.981);
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+            font-family: 'Poppins' , sans-serif;
+            padding: 15px;
+            padding-bottom: 5px;
+        }
+
+        .project{
+            border: 2px solid grey;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        .contact{
+            margin: 20px;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(245, 112, 71, 0.981) ;
+        }
+
+        #list{
+            display: flex;
+            justify-content: center;
+            gap: 50px ;
+        }
+
+        .navigation{
+            list-style: none;
+            color: white;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+         
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1 >Welcome to my Portfolio</h1>
+
+        <nav>
+            <ul id="list">
+                <li class="navigation">About</li>
+                <li class="navigation">Project</li>
+                <li class="navigation">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main >
+
+         <section >
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating functional and beautiful web application</p>
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744201055641/29e6ba66-8f13-4912-a279-311d6107d35e.jpeg?" alt="Image of Mine">
+
+        </section>
+
+        <section >
+
+            <h2>Projects</h2>
+
+            <article class="project" >
+                <h3>Project One : Personal Blog</h3>
+                <br>
+
+                <img width="400px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744827665728/8889e8e6-baf7-4ed5-8849-db2d8ff49cb7.jpeg?" alt="image of my personal blog">
+
+                <p>A personal blog where i write about web development , programming , and technology .</p>
+
+                <br>
+
+                <a href="https://iamsameer.hashnode.dev/naming-conventions-in-programming">View Blog</a>
+
+                <ul>
+                    <li>technology Used
+                        <ul>
+                            <li>HTML</li>
+                            <li>Css</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </article>
+            <br>
+            <article class="project">
+                <h3>Project two : Article on Js Variables</h3>
+                <br>
+
+                <img width="400px" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1744391432306/72437178-9f4d-4bd2-961d-b83d537bc76c.jpeg?" alt="">
+
+                <br>
+
+                
+                <p>An article where i discssed impotrant points about Variables in JavaScript .</p>
+                
+                <a href="https://iamsameer.hashnode.dev/variables-in-javascript">View article here</a>
+
+                <ul>
+                    <li>technology Used
+                        <ul>
+                            <li>HTML</li>
+                            <li>Css</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+    </main>
+
+    <section class="contact">
+
+        <h3>Contact Me</h3>
+        <br>
+
+        <form action="#">
+
+            <label for="name"> Full Name :</label>
+            <input type="text" name="user-name" id="name" required placeholder="Enter your full name here">
+            <br><br>
+            <label for="email">Email :</label>
+            <input type="email" name="user-email"
+            id="email" required placeholder="Enter your email here">
+            <br><br>
+            <label for="message">Message :</label>
+            <br>
+            <textarea name="user-message" id="message"></textarea>
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+
+    </section>
+
+    <footer>
+         <p class="footer">&copy; 2025 My Portfolio</p>
+         <p class="footer">Follow me on <a href="https://hashnode.com/@iamSameer">Hashnode</a> <a href="https://github.com/IsamirMalik">GitHub</a></p>
+    </footer>
+    
+</body>
+</html>
